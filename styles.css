@@ -3,16 +3,13 @@ body, html{
 }
 body{
   margin: 0px;
-  /*background-color:#444;*/
-  background-image: url(https://media.giphy.com/media/8Ry7iAVwKBQpG/giphy.gif);
+  background-color:#444;
   font-size: 18px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .addBlueDancerButton, .addOrangeDancerButton, .lineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -24,19 +21,19 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
+  border:10px solid red;
   border-radius:10px;
   position:absolute;
-/*  background-image: url(img/corgi.jpg);*/
 }
 
-
-
-
-img {
-  height: 75px;
-  width: 75px;
+.blueDancer{
+  border:10px solid blue;
+  border-radius:10px;
+  position:absolute;
 }
 
-img .southpark {
-  height: 5000px;
+.orangeDancer{
+  border:10px solid orange;
+  border-radius:10px;
+  position:absolute;
 }
