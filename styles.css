@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
+  background-image: url(http://i.giphy.com/8Ry7iAVwKBQpG.gif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -27,13 +30,21 @@ body, a:link, a:visited, a:active{
 }
 
 .blueDancer{
-  border:10px solid blue;
-  border-radius:10px;
+/*  border:10px solid blue;
+  border-radius:10px;*/
   position:absolute;
 }
 
 .orangeDancer{
-  border:10px solid orange;
-  border-radius:10px;
+
   position:absolute;
 }
+
+.food {
+  height: 75px;
+}
+
+
+/*img {
+
+}*/

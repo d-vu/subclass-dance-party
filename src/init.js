@@ -12,7 +12,7 @@ $(document).ready(function() {
     console.log(dancer);
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
-
+sd
   });
 
   $('.addBlueDancerButton').on('click', function(event) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
       $(window.dancers[i].$node).animate({
         top: '50%'
-      }, Math.random() * 4000, function() {
+      }, Math.random() * 5000 + 1500, function() {
         //
       });
 
