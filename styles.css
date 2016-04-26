@@ -3,8 +3,11 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /*background-color:#444;*/
+  background-image: url(https://media.giphy.com/media/8Ry7iAVwKBQpG/giphy.gif);
   font-size: 18px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -21,7 +24,8 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  border:10px solid blue;
   border-radius:10px;
   position:absolute;
+/*  background-image: url(img/corgi.jpg);*/
 }

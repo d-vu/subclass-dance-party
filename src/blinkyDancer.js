@@ -10,3 +10,9 @@ makeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
+
+
+  // this.$node.animate({
+  //   left: "66%",
+  //   top: "50%"
+  // });
