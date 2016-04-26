@@ -12,7 +12,6 @@ $(document).ready(function() {
     console.log(dancer);
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
-sd
   });
 
   $('.addBlueDancerButton').on('click', function(event) {
@@ -25,6 +24,18 @@ sd
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+    $('.gifs').mouseover(function() {
+      $(this).animate({
+        width: '+=20',
+        height: '+=20'
+      }, 1);
+    }).mouseleave(function() {
+      $(this).animate({
+        width: '-=20',
+        height: '-=20'
+      }, 1);
+    });    
   });
 
   $('.addOrangeDancerButton').on('click', function(event) {
@@ -37,31 +48,43 @@ sd
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+    $('.food').mouseover(function() {
+      $(this).animate({
+        width: '+=20',
+        height: '+=20'
+      }, 1);
+    }).mouseleave(function() {
+      $(this).animate({
+        width: '-=20',
+        height: '-=20'
+      }, 1);
+    });
   });
 
-  // $('.lineUpButton').on('click', function() {
-  //   console.log('bang');
-  //   $('.dancer, .blueDancer, .orangeDancer').animate({
-  //     top: '50%'
-  //   }, Math.random() * 4000, function() {
-  //     //
-  //   });
-  // });
-
+//line up dancer methods
   $('.lineUpButton').on('click', function() {
     console.log('bang');
     for (var i = 0; i < window.dancers.length; i++) {
-
       $(window.dancers[i].$node).animate({
         top: '50%'
-      }, Math.random() * 5000 + 1500, function() {
+      }, Math.random() * 3000 + 1500, function() {
         //
       });
-
     }
-
   });
 
+//feed Jake method
+  $('.feedJakeButton').on('click', function() {
+    $('.orangeDancer').animate({
+      top: '41%',
+      left: '67%'
+    }, 1000, function() {
+      $('.orangeDancer').fadeOut('slow', function() {
+        $('.boom').css('visibility', 'visible').delay(400).fadeOut();
+      });
+    });
+  });
 
 });
 

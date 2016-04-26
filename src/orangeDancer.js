@@ -19,15 +19,5 @@ makeOrangeDancer.prototype.constructor = makeOrangeDancer;
 
 makeOrangeDancer.prototype.step = function() {
   makeDancer.prototype.step.call(this);
-  this.$node.animate({
-    top: '+=20'
-  }).animate({
-    top: '-=20'
-  });
-  // this.$node.toggle(function() {
-  //   $(this).rotate({ count: 99999, forceJS: true });
-  // }, function() {
-  //   $(this).stop();
-  // });
 };
 
