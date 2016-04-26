@@ -34,8 +34,15 @@ $(document).ready(function() {
     $('.dancer').animate({
       left: '66%',
       top: '50%'
+    }, Math.random() * 1000, function() {
+      $('.dancer').hide();
     });
+  });
 
+  $('.lineUpButton').on('click', function() {
+    $('.dancer').animate({
+      top: '50%'
+    });
   });
 });
 
