@@ -1,5 +1,7 @@
 body, html{
   height:100%;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
 }
 body{
   margin: 0px;
@@ -12,8 +14,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .addBlueDancerButton, .addOrangeDancerButton, .lineUpButton,
-.feedJakeButton {
+.title, .addDancerButton, .addBlueDancerButton, .addOrangeDancerButton  {
   padding:5px 12px;
   float:right;
 }
@@ -30,19 +31,18 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.blueDancer{
-/*  border:10px solid blue;
-  border-radius:10px;*/
+.dancer{
+  border:10px solid red;
+  border-radius:10px;
   position:absolute;
 }
 
-.orangeDancer{
-
-  position:absolute;
+.bmoDancer, .blueDancer, .orangeDancer {
+  position: absolute;
 }
 
 .food {
-  height: 75px;
+  height: 100px;
 }
 
 .boom {
@@ -52,3 +52,11 @@ body, a:link, a:visited, a:active{
   height: 200px;
   visibility: hidden;
 }
+
+
+.bmoCounter {
+  background-color: rgba(255,50,50,0.9);
+  width: 500px;
+}
+
+
